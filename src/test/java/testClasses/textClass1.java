@@ -11,6 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -22,6 +23,8 @@ import baseClasses.BaseClass1;
 import pomClasses.Homepage;
 import pomClasses.LogInpage;
 import pomClasses.Profilepage;
+
+@Listeners(listenerClasses.ListenerClass.class)
 
 public class textClass1 {
 	
